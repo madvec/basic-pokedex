@@ -16,7 +16,7 @@ class PokemonViews extends Component {
     }
 
     componentDidMount() {
-        let url = 'http://pokeapi.co/api/v2/pokemon/?limit=6&offset=0';
+        let url = 'https://pokeapi.co/api/v2/pokemon/?limit=6&offset=0';
         this.getPokemon(url);
     }
 
