@@ -1,0 +1,75 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    max-width: 950px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 35px 15px;
+    text-align: center;
+    left: 15%;
+    top: 15%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.ModalContent {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.ModalContent .Thumbs {
+    margin: 0 auto;
+    max-width: 300px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+}
+
+.ModalContent .Thumbs span {
+    display: inline-block;
+}
+
+.ModalContent .Title {
+    background-color: #dddddd;
+    margin: 0 auto;
+    max-width: 300px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    text-transform: capitalize;
+}
+
+.Wrapper {
+    border: 1px solid #ccc;
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+.Wrapper .WrapperHalf {
+    border-left: 1px solid #ccc;
+    width: 50%;
+}
+
+.Wrapper .WrapperHalf p {    
+    border-bottom: 2px solid #ccc;
+}
+
+.Wrapper ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (min-width: 600px) {
+    .ModalContent {
+        margin: 0 auto;
+        max-width: 75%;
+    }
+    .Modal {
+        width: 80%;
+        left: 10%;
+    }
+}

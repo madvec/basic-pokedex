@@ -1,0 +1,46 @@
+.Pokeball {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: solid 2px black;
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#FFFFFF));
+    background: linear-gradient(to bottom, #EEEEEE 0%, #FFFFFF 100%);
+    margin: 10px auto;
+  }
+
+  .Pokeball:before, .Pokeball:after {
+    content: "";
+    display: block;
+  }
+  .Pokeball, .Pokeball:before, .Pokeball:after {
+    -webkit-transition: all 600ms cubic-bezier(0.67, 0.4, 0.36, 0.75);
+    transition: all 600ms cubic-bezier(0.67, 0.4, 0.36, 0.75);
+  }
+  .Pokeball:before {
+    width: 32px;
+    height: 18px;
+    border-bottom: solid 2px black;
+    border-radius: 25px 25px 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d10000), color-stop(50%, #ff0000));
+    background: linear-gradient(to bottom, #d10000 0%, #ff0000 50%);
+  }
+  .Pokeball:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+    background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px black, 0 0 0 2px #ddd, 0 0 0 3.5714285714px black, 0 0 5px 2.9411764706px rgba(0, 0, 0, 0.4);
+  }
+
+  .Tada {
+    -webkit-animation: tada 1200ms infinite;
+            animation: tada 1200ms infinite;
+  }

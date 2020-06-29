@@ -1,0 +1,28 @@
+.Main-wrapper {
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.Controls {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.Controls button {
+    width: 100px;
+}
+
+.Controls button:nth-child(1) {
+    margin-left: 0;
+}
+
+.Controls button:nth-last-child(1) {
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .Controls {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}

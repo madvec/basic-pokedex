@@ -1,0 +1,19 @@
+.Item {
+    border: 1px solid #cccccc;
+    max-width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Item div {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.Sprite {
+    border-bottom: 1px solid #cccccc;
+}
+
+.Info {
+    background-color: #dddddd;
+}
